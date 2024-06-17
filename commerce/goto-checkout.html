@@ -10,43 +10,57 @@
             background-color: #d9e6d3;
             color: #4a4a4a;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
             height: 100vh;
             margin: 0;
-            text-align: center;
         }
-        .container {
-            max-width: 600px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        header {
+            background-color: #d9e6d3;
             padding: 20px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header a {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+        .container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .message {
             font-size: 24px;
             font-weight: bold;
             color: #4a4a4a;
         }
-        .footer {
-            margin-top: 20px;
+        footer {
+            text-align: center;
+            padding: 20px;
         }
-        .footer a {
-            margin: 0 10px;
+        footer a {
             color: #4a4a4a;
             text-decoration: none;
         }
-        .footer a:hover {
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <header>
+        <a href="https://catoglu.com/">catoglu</a>
+    </header>
     <div class="container">
         <div class="message">
             Please contact with catoglu.
         </div>
     </div>
+    <footer>
+        <a href="https://catoglu.com/">&lt; back to homepage</a>
+    </footer>
 </body>
 </html>
